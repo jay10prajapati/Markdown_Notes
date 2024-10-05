@@ -2,4 +2,4 @@
 ### [2. Ito's Lemma](2_itto_lamma.md)
 ### [3. Ito's Lemma in Higher Dimensions](2_itto_lemma_higher_dim.md)
 ### [4. Geometric Brownian Motion (GBM)](4_GBM.md)
-### [5. Black-Scholes Model](5_black_sholes_model.md)
+### [5. Black-Scholes Model](5_black_scholes_model.md)
