@@ -42,13 +42,16 @@ Let’s say we have a function $f(S_1(t), S_2(t), t)$ that represents the value 
 
 Now, let’s use **Ito’s Lemma for higher dimensions** to find the differential $df$.
 
-First, write down the stochastic processes for $S_1(t)$ and $S_2(t)$:
+First, write down the stochastic processes for $S_1(t)$ and $S_2(t)$ :
+
 $$
 dS_1(t) = \mu_1 S_1 dt + \sigma_1 S_1 dB_1(t)
 $$
+
 $$
 dS_2(t) = \mu_2 S_2 dt + \sigma_2 S_2 dB_2(t)
 $$
+
 where:
 - $\mu_1$ and $\mu_2$ are the expected rates of return for stock 1 and stock 2.
 - $\sigma_1$ and $\sigma_2$ are the volatilities (how much the stock prices fluctuate).
@@ -66,11 +69,12 @@ Now, apply Ito’s Lemma step-by-step to find the differential $df(S_1, S_2)$.
    - $\frac{\partial^2 f}{\partial S_1 \partial S_2} = 1$
 
 2. **Applying Ito's Lemma**:
-   $$
-   df = \frac{\partial f}{\partial S_1} dS_1 + \frac{\partial f}{\partial S_2} dS_2 + \frac{1}{2} \left( \frac{\partial^2 f}{\partial S_1 \partial S_2} dS_1 dS_2 \right)
-   $$
+   
+$$
+df = \frac{\partial f}{\partial S_1} dS_1 + \frac{\partial f}{\partial S_2} dS_2 + \frac{1}{2} \left( \frac{\partial^2 f}{\partial S_1 \partial S_2} dS_1 dS_2 \right)
+$$
 
-Substitute the partial derivatives and the stochastic processes $dS_1$ and $dS_2$:
+Substitute the partial derivatives and the stochastic processes $dS_1$ and $dS_2$ :
 
 $$
 df = S_2 dS_1 + S_1 dS_2 + \frac{1}{2} \cdot 1 \cdot dS_1 dS_2
